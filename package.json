@@ -1,6 +1,6 @@
 {
   "name": "com.dodo13114arch.ai-npc-services",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "displayName": "AI NPC Services",
   "description": "A comprehensive Unity package for AI-driven NPC interactions. Provides unified interfaces for Text-to-Speech (TTS), Speech-to-Text (STT), and Large Language Model (LLM) services including Google AI, OpenAI, Ollama, and HuggingFace integrations. Ready Player Me compatible.",
   "unity": "2022.3",
