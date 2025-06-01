@@ -1,7 +1,9 @@
 {
     "name": "AIServices",
     "rootNamespace": "AIServices",
-    "references": [],
+    "references": [
+        "Unity.TextMeshPro"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -14,6 +16,11 @@
             "name": "com.unity.nuget.newtonsoft-json",
             "expression": "",
             "define": "NEWTONSOFT_JSON"
+        },
+        {
+            "name": "com.unity.textmeshpro",
+            "expression": "",
+            "define": "TMP_PRESENT"
         }
     ],
     "noEngineReferences": false
