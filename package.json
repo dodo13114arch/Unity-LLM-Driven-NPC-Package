@@ -1,6 +1,6 @@
 {
   "name": "com.dodo13114arch.ai-npc-services",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "AI NPC Services",
   "description": "A comprehensive Unity package for AI-driven NPC interactions. Provides unified interfaces for Text-to-Speech (TTS), Speech-to-Text (STT), and Large Language Model (LLM) services including Google AI, OpenAI, Ollama, and HuggingFace integrations. Ready Player Me compatible.",
   "unity": "2022.3",
@@ -29,13 +29,6 @@
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.2.1"
   },
-  "samples": [
-    {
-      "displayName": "Basic AI NPC Example",
-      "description": "Basic example showing how to set up an AI-driven NPC with TTS and LLM",
-      "path": "Samples~/BasicExample"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/dodo13114arch/Unity-LLM-Driven-NPC-Package.git"

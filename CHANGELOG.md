@@ -4,36 +4,66 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2025-06-01
+## [1.0.1] - 2025-01-27
+
+### Fixed
+- **Critical**: Added missing `VoiceScriptableObject.cs` script that was causing compilation errors
+- **Critical**: Added missing `GoogleCloudSpeechToText.cs` dependency for Google STT service
+- **Critical**: Added required Assembly Definition file (`AIServices.asmdef`) for proper Unity Package Manager integration
+- **Compatibility**: Made Newtonsoft.Json dependency optional with conditional compilation
+- **Package Structure**: Removed non-existent samples reference from package.json
 
 ### Added
-- 🎯 **統一介面設計** - ITtsService、ISttService、ILlmService抽象介面
-- 🗣️ **文字轉語音服務**
-  - Google Text-to-Speech integration
-  - OpenAI TTS integration
-  - HuggingFace TTS integration
-- 👂 **語音轉文字服務**
-  - Google Speech-to-Text integration
-- 🤖 **大型語言模型服務**
-  - OpenAI GPT-4 integration
-  - Google Gemini integration
-  - Ollama local model integration
-- 🌍 **多語言語音配置** - 10種語言的預設語音配置
-  - 繁體中文 (zh-TW)
-  - 美式英語 (en-US)
-  - 英式英語 (en-GB)
-  - 德語 (de-DE)
-  - 西班牙語 (es-ES)
-  - 法語 (fr-FR)
-  - 義大利語 (it-IT)
-  - 波蘭語 (pl-PL)
-  - 俄語 (ru-RU)
-  - 烏克蘭語 (uk-UA)
-- 🔧 **核心管理系統**
-  - NpcInteractionManager - 統一的NPC互動管理器
-  - 模組化設計支援服務熱插拔
-- 📦 **Unity Package格式** - 標準的Unity Package Manager支援
-- 📚 **完整文檔** - README、API文檔、使用範例
+- `JsonHelper` utility class for JSON serialization with fallback support
+- `GoogleCloudSpeechToText` class with complete STT API support
+- Conditional compilation support for Newtonsoft.Json dependency
+- Proper GUID assignment for VoiceScriptableObject to match existing .asset files
+
+### Technical Details
+- Fixed broken script references in voice configuration assets
+- Restored missing dependencies from original GoogleTextToSpeech and GeminiManager packages
+- Improved package compatibility for users without Newtonsoft.Json
+- Enhanced Assembly Definition with version defines for better dependency management
+
+## [1.0.0] - 2025-01-27
+
+### Added
+- Initial release of AI NPC Services package
+- Complete TTS (Text-to-Speech) service implementations:
+  - Google Text-to-Speech with voice configuration support
+  - OpenAI TTS service with multiple voice options
+  - HuggingFace TTS integration (experimental)
+- STT (Speech-to-Text) service implementations:
+  - Google Speech-to-Text with real-time streaming
+  - OpenAI Whisper integration
+- LLM (Large Language Model) service implementations:
+  - Google Gemini integration with conversation memory
+  - OpenAI GPT integration with customizable models
+  - Ollama local LLM support (experimental)
+  - HuggingFace Transformers integration (experimental)
+- Unified service interfaces (`ITtsService`, `ISttService`, `ILlmService`)
+- Core interaction management (`NpcInteractionManager`)
+- Pre-configured voice assets for 10 languages:
+  - English (US & UK)
+  - Chinese Traditional (Taiwan)
+  - German, French, Spanish, Italian
+  - Polish, Russian, Ukrainian
+- Ready Player Me compatibility
+- Debug UI for testing and development
+
+### Features
+- Plug-and-play architecture with interface-based design
+- Real-time voice conversation capabilities
+- Conversation memory and context management
+- Error handling and retry mechanisms
+- Caching support for improved performance
+- Extensive logging and debugging features
+
+### Technical Specifications
+- Unity 2022.3+ compatibility
+- MIT License
+- Modular design allowing selective service usage
+- Comprehensive API documentation
 
 ### Security
 - ✅ **API密鑰安全** - 所有API密鑰均透過Unity Inspector設定，無硬編碼風險
