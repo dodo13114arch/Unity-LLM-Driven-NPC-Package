@@ -18,7 +18,7 @@ namespace AIServices.Core
         [SerializeField] private MonoBehaviour ttsServiceComponent;
         
         [Header("Ready Player Me 設定")]
-        [SerializeField] private ReadyPlayerMe.Core.VoiceHandler voiceHandler;
+        [SerializeField] private MonoBehaviour voiceHandler; // 改為通用MonoBehaviour
         
         [Header("Debug UI")]
         [SerializeField] private bool enableDebugUI = true;
@@ -281,16 +281,37 @@ namespace AIServices.Core
         {
             Debug.Log("TTS 音頻準備就緒");
             
-            // 播放音頻
-            if (voiceHandler != null && voiceHandler.AudioSource != null)
+            // 播放音頻 - 尋找AudioSource組件
+            AudioSource audioSource = null;
+            
+            if (voiceHandler != null)
             {
-                voiceHandler.AudioSource.Stop();
-                voiceHandler.AudioSource.clip = clip;
-                voiceHandler.AudioSource.Play();
+                audioSource = voiceHandler.GetComponent<AudioSource>();
+            }
+            
+            if (audioSource == null)
+            {
+                // 如果沒有設置voiceHandler，嘗試在當前GameObject上找AudioSource
+                audioSource = GetComponent<AudioSource>();
+            }
+            
+            if (audioSource == null)
+            {
+                // 如果還是沒有，創建一個臨時的AudioSource
+                audioSource = gameObject.AddComponent<AudioSource>();
+                Debug.Log("自動創建AudioSource組件");
+            }
+            
+            if (audioSource != null)
+            {
+                audioSource.Stop();
+                audioSource.clip = clip;
+                audioSource.Play();
+                Debug.Log("播放TTS音頻");
             }
             else
             {
-                Debug.LogWarning("VoiceHandler 或其 AudioSource 未設置");
+                Debug.LogWarning("無法找到或創建AudioSource組件");
             }
             
             // 重置處理狀態
