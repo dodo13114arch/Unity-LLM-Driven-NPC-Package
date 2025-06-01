@@ -37,6 +37,7 @@
 在Inspector中填入API密鑰：
 - **OpenAI**：到 [OpenAI](https://platform.openai.com/) 取得
 - **Google**：到 [Google Cloud](https://console.cloud.google.com/) 取得
+- **Gemini**：到 [AI Studio](https://aistudio.google.com/apikey) 取得
 
 ### 步驟4：連接服務
 在 `NpcInteractionManager` 的Inspector中，將對應服務拖入對應欄位。
