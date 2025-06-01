@@ -2,6 +2,7 @@
 
 [![Unity 2022.3+](https://img.shields.io/badge/Unity-2022.3%2B-black.svg)](https://unity3d.com/get-unity/download)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/dodo13114arch/Unity-LLM-Driven-NPC-Package)
 
 一個Unity AI對話系統，讓NPC能夠語音對話。支援Google、OpenAI等多種AI服務，需搭配Ready Player Me使用。
 
