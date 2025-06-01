@@ -116,22 +116,6 @@ public class MyTtsService : MonoBehaviour, ITtsService
 }
 ```
 
-## Ready Player Me整合
-- **表情同步**：RPM頭像會自動同步口型動畫
-- **姿態控制**：可通過動畫控制器添加手勢
-- **視線追蹤**：支援NPC注視玩家功能
-
-## 常見問題
-
-**Q: 無法連接AI服務？**  
-A: 檢查API密鑰是否正確，確保網路連線正常
-
-**Q: 語音播放有問題？**  
-A: 確認AudioSource組件已正確設置
-
-**Q: Ollama連接失敗？**  
-A: 確保Ollama服務運行在正確端口 (預設11434)
-
 ## 授權
 
 MIT授權 - 請查看 [LICENSE.md](LICENSE.md)
