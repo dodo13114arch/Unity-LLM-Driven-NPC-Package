@@ -93,4 +93,4 @@ MIT - 詳見 [LICENSE.md](LICENSE.md)
 
 ---
 
-如果有幫助請給個Star！ ⭐ 
+如果有幫助請給個Star！ ⭐  
