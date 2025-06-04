@@ -1,8 +1,8 @@
 {
   "name": "com.dodo13114arch.ai-npc-services",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "AI NPC Services",
-  "description": "A comprehensive Unity package for AI-driven NPC interactions. Provides unified interfaces for Text-to-Speech (TTS), Speech-to-Text (STT), and Large Language Model (LLM) services including Google AI, OpenAI, Ollama, and HuggingFace integrations. Ready Player Me compatible.",
+  "description": "A comprehensive Unity package for AI-driven NPC interactions. Provides unified interfaces for Text-to-Speech (TTS), Speech-to-Text (STT), and Large Language Model (LLM) services including Google AI, OpenAI, ElevenLabs, Mistral, Ollama, and HuggingFace integrations. Features high-quality voice synthesis with ElevenLabs, advanced speech recognition with OpenAI Whisper, and multilingual conversations with Mistral AI. Ready Player Me compatible.",
   "unity": "2022.3",
   "unityRelease": "0f1",
   "keywords": [
@@ -13,13 +13,19 @@
     "llm",
     "openai",
     "google",
+    "elevenlabs",
+    "mistral",
+    "whisper",
     "ollama",
     "huggingface",
     "speech",
     "chatbot",
     "conversation",
     "readyplayerme",
-    "rpm"
+    "rpm",
+    "voice-synthesis",
+    "speech-recognition",
+    "multilingual"
   ],
   "author": {
     "name": "David Chang",
