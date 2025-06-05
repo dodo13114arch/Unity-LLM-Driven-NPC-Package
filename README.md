@@ -10,6 +10,8 @@
 
 ## 安裝
 
+> 請先確認已安裝[ReadyPlayerMePackage](https://assetstore.unity.com/packages/tools/game-toolkits/ready-player-me-avatar-and-character-creator-259814)
+
 1. 開啟Unity Package Manager（`Window` → `Package Manager`）
 2. 點擊 `+` → `Add package from git URL...`
 3. 輸入：`https://github.com/dodo13114arch/Unity-LLM-Driven-NPC-Package.git`
