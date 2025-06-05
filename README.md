@@ -1,5 +1,7 @@
 # AI NPC Services for Unity
 
+> **Language**: [English](README_EN.md) | [繁體中文](README.md)
+
 [![Unity 2022.3+](https://img.shields.io/badge/Unity-2022.3%2B-black.svg)](https://unity3d.com/get-unity/download)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/dodo13114arch/Unity-LLM-Driven-NPC-Package)
